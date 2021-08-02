@@ -13,12 +13,13 @@ import org.apache.flink.util.Collector;
  * @author hanwensheng
  * @date 2021/1/15
  * StreamWorldCount
+ * 流处理
  */
 public class StreamWorldCount {
     public static void main(String[] args) throws Exception{
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         //设置并行线程数
-        env.setParallelism(8);
+        env.setParallelism(2);
 
         /*String inputPath = "E:\\develop\\git_study\\flinkstudy\\demo\\src\\main\\resources\\hello.txt";
         DataStreamSource<String> ds = env.readTextFile(inputPath);*/

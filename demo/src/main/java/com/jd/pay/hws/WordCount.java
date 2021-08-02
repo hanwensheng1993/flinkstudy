@@ -10,6 +10,7 @@ import org.apache.flink.util.Collector;
  * @author hanwensheng
  * @date 2021/1/7
  * WordCount
+ * 批处理
  */
 public class WordCount {
 
